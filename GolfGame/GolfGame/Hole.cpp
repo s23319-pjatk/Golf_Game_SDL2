@@ -14,7 +14,7 @@ Hole::Hole(int x, int y, int size)
 
 void Hole::render(SDL_Renderer *renderer) const
 {
-    SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF); // kolor dołka w tym przypadku czarny ;)
+    SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF); // kolor dołka rgba w tym przypadku czarny ;)
     SDL_RenderFillRect(renderer, &holeRect);
 }
 

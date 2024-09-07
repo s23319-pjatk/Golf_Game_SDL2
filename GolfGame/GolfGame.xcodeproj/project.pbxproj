@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB2EDC82C8B931B005E1F47 /* Water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2EDC62C8B931B005E1F47 /* Water.cpp */; };
 		1BC39E942C2F23BB00A3300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC39E932C2F23BB00A3300A /* Assets.xcassets */; };
 		1BC39EA12C2F242100A3300A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BC39EA02C2F242100A3300A /* main.cpp */; };
 		1BC39EA42C2F244800A3300A /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC39EA32C2F244800A3300A /* SDL2.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BB2EDC62C8B931B005E1F47 /* Water.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Water.cpp; sourceTree = "<group>"; };
+		1BB2EDC72C8B931B005E1F47 /* Water.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Water.hpp; sourceTree = "<group>"; };
 		1BC39E8D2C2F23BA00A3300A /* GolfGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC39E932C2F23BB00A3300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BC39E9A2C2F23BB00A3300A /* GolfGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GolfGame.entitlements; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				1BC39EB12C2F2B8C00A3300A /* Obstacle.hpp */,
 				1BC39EB62C2F3CCF00A3300A /* Level.cpp */,
 				1BC39EB72C2F3CCF00A3300A /* Level.hpp */,
+				1BB2EDC62C8B931B005E1F47 /* Water.cpp */,
+				1BB2EDC72C8B931B005E1F47 /* Water.hpp */,
 			);
 			path = GolfGame;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				1BC39EB52C2F35EC00A3300A /* Vector2D.cpp in Sources */,
 				1BC39EB82C2F3CCF00A3300A /* Level.cpp in Sources */,
 				1BC39EAF2C2F2B7B00A3300A /* Hole.cpp in Sources */,
+				1BB2EDC82C8B931B005E1F47 /* Water.cpp in Sources */,
 				1BC39EA12C2F242100A3300A /* main.cpp in Sources */,
 				1BC39EAC2C2F275000A3300A /* GolfCourse.cpp in Sources */,
 			);

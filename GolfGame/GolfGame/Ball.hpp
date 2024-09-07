@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include "Vector2D.hpp"
+#include "Obstacle.hpp"
 
 class Ball
 {
@@ -20,11 +21,17 @@ public:
     void update();
     void render(SDL_Renderer* renderer);
     void applyForce(const Vector2D& force);
+    void saveCurrentPosition();
+    void resetToLastPosition();
+    void handleCollision(const Obstacle& obstacle);  
+    void reflectX() {velocity.x = -velocity.x;}
+    void reflectY() {velocity.y = -velocity.y;}
     SDL_Rect getRect() const;
 
 private:
     Vector2D position;
     Vector2D velocity;
+    Vector2D lastPosition; // zmienna do przechowywania ostatniej pozycji
     int size;
 
     void applyFriction();

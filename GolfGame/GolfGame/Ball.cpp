@@ -5,8 +5,9 @@
 //  Created by Marceli Gosztyła on 28/06/2024.
 //
 
-
 #include "Ball.hpp"
+#include "Obstacle.hpp"
+#include <SDL2/SDL.h>
 
 Ball::Ball(float x, float y, int size)
     : position(x, y), velocity(0.0f, 0.0f), size(size) {}
@@ -48,6 +49,18 @@ void Ball::render(SDL_Renderer* renderer)
 void Ball::applyForce(const Vector2D& force)
 {
     velocity += force;
+    saveCurrentPosition(); // zapamietanie pozycji przy kazdym stfrzale
+}
+
+void Ball::saveCurrentPosition()
+{
+    lastPosition = position; // zapamietuje bierzaca pozycje jako ostatnia
+}
+
+void Ball::resetToLastPosition()
+{
+    position = lastPosition; // restartuje pozycje do ostatniej zapisanej
+    velocity = Vector2D(0.0f, 0.0f); // resetuje predkosc
 }
 
 SDL_Rect Ball::getRect() const
